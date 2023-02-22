@@ -8,6 +8,7 @@ This article is written to cover the data analyis solution for the capstone give
 •	Share
 •	Act
 
+
 The capstone is over Cyclistic that is located in Chicago and it is a bike share company.The bikes are used by casual people and people with membership so the main idea is to convince the casual people to ask for a membership by checking how casual people and membership people bike differently. Casual people are people who use a single ride trip or a full day trip and members use cyclistic member.
 Ask Three questions will guide the future marketing program: 
 1. How do annual members and casual riders use Cyclistic bikes differently? 
@@ -45,10 +46,11 @@ So R was used as the files were large to be used by other programs. Installed th
 - time_of_day (morning,night..etc) 
 
 Cleaning up before the Analysis
-1.Removed these columns (start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng) 
-2.Removed bad data where ride_length<=0 
-3.Removed Remove NA with R 
-4.Removed duplicates using distinct
+1.	Removed these columns (start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng) 
+2.	Removed bad data where ride_length<=0 
+3.	Removed Remove NA with R 
+4.	Removed duplicates using distinct
+
 
 Analysis 
 1.	checked the rnow() to get the value of total rows
@@ -64,14 +66,15 @@ Analysis
 
 
 Visualizing by R 
-Number of rides by ridertypes 
-Average of rides by ridertype 
-Number of rides by ridertypes per month 
-Average of rides by ridertypes per month 
-Number of rides by ridertypes per weekday 
-Average of rides by ridertypes per weekday
-Number of rides by ridertypes per season 
-Average of rides by ridertypes per season
+•	Number of rides by ridertypes 
+•	Average of rides by ridertype 
+•	Number of rides by ridertypes per month 
+•	Average of rides by ridertypes per month 
+•	Number of rides by ridertypes per weekday 
+•	Average of rides by ridertypes per weekday
+•	Number of rides by ridertypes per season 
+•	Average of rides by ridertypes per season
+
 
 
 
