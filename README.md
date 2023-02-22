@@ -1,4 +1,3 @@
-<html>
 # Coursera-Capstone 
 This article is written to cover the data analyis solution for the capstone given by Google Data analytics professional certificate. The case study will cover the phases of data analysis :
 
@@ -122,11 +121,11 @@ Members drive more from 6 am to 8 am for work and casual people tend to drive mo
 Casual people drive longer than members
 <h3>Month</h3>
 <br>
-![per_month](https://user-images.githubusercontent.com/71370133/220764407-3855b081-80d4-4abf-886b-6b583e474e82.png)
+![per_month]([https://user-images.githubusercontent.com/71370133/220764407-3855b081-80d4-4abf-886b-6b583e474e82.png](https://www.dropbox.com/s/x415s9ndrlx86mj/per_month.png?dl=0))
 <br>
 Casual people drive longer from March to October, while members drive longer from November to February. 
 </p>
-</html>
+
 
 
 
