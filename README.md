@@ -53,27 +53,31 @@ So R was used as the files were large to be used by other programs. Installed th
 
 
 <h2>Analysis </h2>
-1.	checked the rnow() to get the value of total rows
-2.	checked the summary of the dataframe and str() the type of the columns
-3.	checked the calculation of mean ,median, max and min
-4.	compared the ride lenght of members and casuals according to day
-5.	compared the ride lenght of members and casuals according to hour
-6.	compared the ride lenght of members and casuals according to month
-7.	compared the ride lenght of members and casuals according to day_of_week(sunday..etc)
-8.	compared the ride lenght of members and casuals according to season
-9.	compared the ride lenght of members and casuals according to hour
-10.	compared the ride lenght of members and casuals according to time_of_day
+1.	checked the rnow() to get the value of total rows<br>
+2.	checked the summary of the dataframe and str() the type of the columns<br>
+3.	checked the calculation of mean ,median, max and min<br>
+4.	compared the ride lenght of members and casuals according to day<br>
+5.	compared the ride lenght of members and casuals according to hour<br>
+6.	compared the ride lenght of members and casuals according to month<br>
+7.	compared the ride lenght of members and casuals according to day_of_week(sunday..etc)<br>
+8.	compared the ride lenght of members and casuals according to season<br>
+9.	compared the ride lenght of members and casuals according to hour<br>
+10.	compared the ride lenght of members and casuals according to time_of_day<br>
 
 
 <h2>Visualizing by R </h2>
-•	Number of rides by ridertypes 
-•	Average of rides by ridertype 
-•	Number of rides by ridertypes per month 
-•	Average of rides by ridertypes per month 
-•	Number of rides by ridertypes per weekday 
-•	Average of rides by ridertypes per weekday
-•	Number of rides by ridertypes per season 
-•	Average of rides by ridertypes per season
+•	Number of rides by ridertypes<br> ![2](https://user-images.githubusercontent.com/71370133/220773169-8aa1123c-1479-4f11-bab7-a32420f00f3b.JPG)
+
+•	Average of rides by ridertype<br> ![3](https://user-images.githubusercontent.com/71370133/220773302-d0f77cb1-bacd-4c74-b986-e6796e427bb3.png)
+
+•	Number of rides by ridertypes per month <br>![4](https://user-images.githubusercontent.com/71370133/220773385-385a2708-db2c-4bd5-9473-c604b9e8a074.png)
+
+•	Average of rides by ridertypes per month <br>![5](https://user-images.githubusercontent.com/71370133/220773406-5ae9173f-8abb-4e83-afaf-b692f0e43df0.png)
+
+•	Number of rides by ridertypes per weekday<br> 
+•	Average of rides by ridertypes per weekday<br>
+•	Number of rides by ridertypes per season <br>
+•	Average of rides by ridertypes per season<br>
 <br>
 <h2>Visulaizing by Tableau</h2>
 <br>
