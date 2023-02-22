@@ -66,7 +66,7 @@ So R was used as the files were large to be used by other programs. Installed th
 
 
 <h2>Visualizing by R </h2>
-•	Number of rides by ridertypes <br> ![](https://github.com/haidy639/coursera-test/tree/photos/membervscasual.png)
+•	Number of rides by ridertypes <br> ![membervscasual](photos/membervscasual.png)
 
 
 <br>
