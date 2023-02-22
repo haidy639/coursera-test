@@ -1,3 +1,4 @@
+<html>
 # Coursera-Capstone 
 This article is written to cover the data analyis solution for the capstone given by Google Data analytics professional certificate. The case study will cover the phases of data analysis :
 
@@ -125,7 +126,7 @@ Casual people drive longer than members
 <br>
 Casual people drive longer from March to October, while members drive longer from November to February. 
 </p>
-
+</html>
 
 
 
