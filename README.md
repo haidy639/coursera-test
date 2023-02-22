@@ -66,11 +66,11 @@ So R was used as the files were large to be used by other programs. Installed th
 
 
 <h2>Visualizing by R </h2>
-•	Number of rides by ridertypes <br> ![2](https://user-images.githubusercontent.com/71370133/220773606-29e2027b-5aae-43ed-9302-a0a70789c9d2.png)
+•	Number of rides by ridertypes <br> ![2](https://user-images.githubusercontent.com/71370133/220774358-ea77e7dd-e8da-4678-988d-276961813781.png)
+
 
 <br>
-•	Average of rides by ridertype <br> ![3](https://user-images.githubusercontent.com/71370133/220773302-d0f77cb1-bacd-4c74-b986-e6796e427bb3.png)
-
+•	Average of rides by ridertype <br> ![3](https://user-images.githubusercontent.com/71370133/220774394-e4b59570-8b6b-4d9a-a208-9595012cf19b.png)
 •	Number of rides by ridertypes per month <br>![4](https://user-images.githubusercontent.com/71370133/220773385-385a2708-db2c-4bd5-9473-c604b9e8a074.png)
 
 •	Average of rides by ridertypes per month <br>![5](https://user-images.githubusercontent.com/71370133/220773406-5ae9173f-8abb-4e83-afaf-b692f0e43df0.png)
