@@ -51,16 +51,17 @@ Cleaning up before the Analysis
 4.Removed duplicates using distinct
 
 Analysis 
-1.checked the rnow() to get the value of total rows 
-2.checked the summary of the dataframe and str() the type of the columns
-3.checked the calculation of mean ,median, max and min 
-4.compared the ride lenght of members and casuals according to day 
-5.compared the ride lenght of members and casuals according to hour 
-6.compared the ride lenght of members and casuals according to month 
-7.compared the ride lenght of members and casuals according to day_of_week(sunday..etc) 
-8.compared the ride lenght of members and casuals according to season 
-9.compared the ride lenght of members and casuals according to hour 
-10.compared the ride lenght of members and casuals according to time_of_day
+1.	checked the rnow() to get the value of total rows
+2.	checked the summary of the dataframe and str() the type of the columns
+3.	checked the calculation of mean ,median, max and min
+4.	compared the ride lenght of members and casuals according to day
+5.	compared the ride lenght of members and casuals according to hour
+6.	compared the ride lenght of members and casuals according to month
+7.	compared the ride lenght of members and casuals according to day_of_week(sunday..etc)
+8.	compared the ride lenght of members and casuals according to season
+9.	compared the ride lenght of members and casuals according to hour
+10.	compared the ride lenght of members and casuals according to time_of_day
+
 
 Visualizing by R 
 Number of rides by ridertypes 
