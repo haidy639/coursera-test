@@ -75,7 +75,7 @@ Visualizing by R
 •	Number of rides by ridertypes per season 
 •	Average of rides by ridertypes per season
 <br>
-<Heading2>Visulaizing by Tableau<Heading2>
+<h3>Visulaizing by Tableau<h3>
 <br>
 <Heading3>Members vs Casual</Heading3>
 ![membervscasual](https://user-images.githubusercontent.com/71370133/220761743-1998a03b-2a94-4560-8fab-cda73dea5a91.png)
