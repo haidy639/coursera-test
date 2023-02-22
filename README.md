@@ -98,19 +98,19 @@ people drive longer using classic bikes ; about 43% of rideable bike types.
 <br>
 <h3>Season</h3>
 <br>
-![season](https://user-images.githubusercontent.com/71370133/220763228-60a201a1-4621-4fa6-9169-af7864ffe27d.png)
+<img src="https://github.com/haidy639/coursera-test/blob/master/photos/season.png">
 <br>
 Members and casuals drive more during the summer time . Especially casual people tend to drive a lot during the summer season.
 <br>
 <h3>Day of the weeek</h3>
-![per_day_of_week](https://user-images.githubusercontent.com/71370133/220763554-15b3f443-8ee1-409b-a872-732e4995eae6.png)<right>
+<img src="https://github.com/haidy639/coursera-test/blob/master/photos/per_day_of_week.png">
 Ride length is higher during the weekends especially on Saturday during the summer season . Followed by Sunday during the summer season that has also a higher ride length result as well
 <br>
-![per_day_of_week2](https://user-images.githubusercontent.com/71370133/220763714-5db518a7-750e-43fc-b4aa-c31ee1a1cb22.png)
+<img src="https://github.com/haidy639/coursera-test/blob/master/photos/per_day_of_week2.png">
 Casual people drive more in weekends than members
 <h3>Hour</h3>
 <br>
-![per_hour](https://user-images.githubusercontent.com/71370133/220768977-06a5eb43-76f1-4624-aa58-6abe48ec510b.png)
+<img src="https://github.com/haidy639/coursera-test/blob/master/photos/per_hour.png">
 <br>
 Members drive more from 6 am to 8 am for work and casual people tend to drive more from 10 am till the night than members.
 <br>
