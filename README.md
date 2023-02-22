@@ -62,6 +62,7 @@ Analysis
 9.compared the ride lenght of members and casuals according to hour
 10.compared the ride lenght of members and casuals according to time_of_day
 
+
 Visualizing
 by R
 Number of rides by ridertypes 
