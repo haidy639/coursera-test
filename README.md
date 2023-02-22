@@ -116,7 +116,7 @@ Members drive more from 6 am to 8 am for work and casual people tend to drive mo
 <br>
 <h3>Day</h3>
 <br>
-![per_day](https://user-images.githubusercontent.com/71370133/220764271-c0b1c2d8-38ab-4a47-b1ba-7696dac2c2a3.png)
+<img src="https://github.com/haidy639/coursera-test/blob/master/photos/per_day.png">
 <br>
 Casual people drive longer than members
 <h3>Month</h3>
