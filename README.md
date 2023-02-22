@@ -73,13 +73,13 @@ So R was used as the files were large to be used by other programs. Installed th
 <br>
 
 •	Number of rides by ridertypes per month <br>
-<img src="https://github.com/haidy639/coursera-test/blob/master/photos/4.png">
+<img src="https://github.com/haidy639/coursera-test/blob/master/photos/4.png"><br>
 
-•	Average of rides by ridertypes per month <br><img src="https://github.com/haidy639/coursera-test/blob/master/photos/5.png">
-•	Number of rides by ridertypes per weekday<br> <img src="https://github.com/haidy639/coursera-test/blob/master/photos/2.png">
-•	Average of rides by ridertypes per weekday<br><img src="https://github.com/haidy639/coursera-test/blob/master/photos/3.png">
-•	Number of rides by ridertypes per season <br><img src="https://github.com/haidy639/coursera-test/blob/master/photos/6.png">
-•	Average of rides by ridertypes per season<br><img src="https://github.com/haidy639/coursera-test/blob/master/photos/7.png">
+•	Average of rides by ridertypes per month <br><img src="https://github.com/haidy639/coursera-test/blob/master/photos/5.png"><br>
+•	Number of rides by ridertypes per weekday<br> <img src="https://github.com/haidy639/coursera-test/blob/master/photos/2.png"><br>
+•	Average of rides by ridertypes per weekday<br><img src="https://github.com/haidy639/coursera-test/blob/master/photos/3.png"><br>
+•	Number of rides by ridertypes per season <br><img src="https://github.com/haidy639/coursera-test/blob/master/photos/6.png"><br>
+•	Average of rides by ridertypes per season<br><img src="https://github.com/haidy639/coursera-test/blob/master/photos/7.png"><br>
 <br>
 <h2>Visulaizing by Tableau</h2>
 <br>
