@@ -75,17 +75,18 @@ Visualizing by R
 •	Number of rides by ridertypes per season 
 •	Average of rides by ridertypes per season
 <br>
-<h3>Visulaizing by Tableau<h3>
-<br>
-<Heading3>Members vs Casual</Heading3>
+<h2>Visulaizing by Tableau</h2>
+</br>
+<h3>Members vs Casual</h3>
 ![membervscasual](https://user-images.githubusercontent.com/71370133/220761743-1998a03b-2a94-4560-8fab-cda73dea5a91.png)
-<br>
+</br>
 Casual people tend to drive about 61% more than members.
-<br>
-<Heading3>Rideable types</Heading3>
-<right>![rideable_type](https://user-images.githubusercontent.com/71370133/220762076-3dbd72ad-766d-4fd9-b369-4716f0c71258.png)
-<br>
-![rideable2](https://user-images.githubusercontent.com/71370133/220762972-e910e810-beaa-43eb-b38a-768d6887eab6.png)
+</br>
+<h3>Rideable types</h3>
+</br>
+<right>![rideable_type](https://user-images.githubusercontent.com/71370133/220762076-3dbd72ad-766d-4fd9-b369-4716f0c71258.png)</right>
+</br>
+<left>![rideable2](https://user-images.githubusercontent.com/71370133/220762972-e910e810-beaa-43eb-b38a-768d6887eab6.png)</left>
 <br>
 people drive longer using classic bikes ; about 43% of rideable bike types.
 <br>
