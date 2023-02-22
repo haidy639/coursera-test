@@ -78,7 +78,8 @@ So R was used as the files were large to be used by other programs. Installed th
 <h2>Visulaizing by Tableau</h2>
 <br>
 <h3>Members vs Casual</h3>
-![membervscasual](https://github.com/haidy639/coursera-test/blob/3766c804d10e23fce47c7b0c41d5c501146bfe39/membervscasual.png)
+<p>
+
 
 Casual people tend to drive about 61% more than members.
 <br>
@@ -118,7 +119,7 @@ Casual people drive longer than members
 ![per_month](https://user-images.githubusercontent.com/71370133/220764407-3855b081-80d4-4abf-886b-6b583e474e82.png)
 <br>
 Casual people drive longer from March to October, while members drive longer from November to February. 
-
+</p>
 
 
 
