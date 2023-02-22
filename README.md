@@ -79,7 +79,7 @@ Visualizing by R
 </br>
 <h3>Members vs Casual</h3>
 ![membervscasual](https://user-images.githubusercontent.com/71370133/220761743-1998a03b-2a94-4560-8fab-cda73dea5a91.png)
-</br>
+
 Casual people tend to drive about 61% more than members.
 </br>
 <h3>Rideable types</h3>
