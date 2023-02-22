@@ -84,29 +84,39 @@ Casual people tend to drive about 61% more than members.
 </br>
 <h3>Rideable types</h3>
 </br>
-<right>![rideable_type](https://user-images.githubusercontent.com/71370133/220762076-3dbd72ad-766d-4fd9-b369-4716f0c71258.png)</right>
+![rideable_type](https://user-images.githubusercontent.com/71370133/220762076-3dbd72ad-766d-4fd9-b369-4716f0c71258.png)
 </br>
-<left>![rideable2](https://user-images.githubusercontent.com/71370133/220762972-e910e810-beaa-43eb-b38a-768d6887eab6.png)</left>
-<br>
+![rideable2](https://user-images.githubusercontent.com/71370133/220762972-e910e810-beaa-43eb-b38a-768d6887eab6.png)
+</br>
 people drive longer using classic bikes ; about 43% of rideable bike types.
 <br>
-<Heading2>Season<Heading2>
-
+<h3>Season</h3>
+</br>
 ![season](https://user-images.githubusercontent.com/71370133/220763228-60a201a1-4621-4fa6-9169-af7864ffe27d.png)
-
+</br>
 Members and casuals drive more during the summer time . Especially casual people tend to drive a lot during the summer season.
-
-Day of the weeek
+</br>
+<h3>Day of the weeek</h3>
 ![per_day_of_week](https://user-images.githubusercontent.com/71370133/220763554-15b3f443-8ee1-409b-a872-732e4995eae6.png)<right>
 Ride length is higher during the weekends especially on Saturday during the summer season . Followed by Sunday during the summer season that has also a higher ride length result as well
-
+</br>
 ![per_day_of_week2](https://user-images.githubusercontent.com/71370133/220763714-5db518a7-750e-43fc-b4aa-c31ee1a1cb22.png)
 Casual people drive more in weekends than members
+<h3>Hour</h3>
+</br>
 ![per_hour](https://user-images.githubusercontent.com/71370133/220763847-b58155e6-c354-401f-948a-7917d3127368.png)
+</br>
 Members drive more from 6 am to 8 am for work and casual people tend to drive more from 10 am till the night than members.
+</br>
+<h3>Day</h3>
+</br>
 ![per_day](https://user-images.githubusercontent.com/71370133/220764271-c0b1c2d8-38ab-4a47-b1ba-7696dac2c2a3.png)
+</br>
 Casual people drive longer than members
+<h3>Month</h3>
+</br>
 ![per_month](https://user-images.githubusercontent.com/71370133/220764407-3855b081-80d4-4abf-886b-6b583e474e82.png)
+</br>
 Casual people drive longer from March to October, while members drive longer from November to February. 
 
 
