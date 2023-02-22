@@ -31,19 +31,19 @@ The data has been made available by Motivate International Inc. under this licen
 First,I tried to use all the tools that i learned during the course and my study.So, i Created a folder for the year, unzipped all the 12 files(january,february, march, april , may , jun, jul,aug,sep,oct,nov,dec) 2022.Excel was used for all the 12 files , ride_length was measured by subtracting ended_at with started_at using the right format as HH:MM:SS . Checked the day_of_week using Weekday function. I figured out it was not the right decision to use it on large data and that costs alot time and excel wasnot able to read the started_at column and ended_at column as date_time.I tried different functions to change them but it was not that effecient.
 <br>
 <br>
-So R was used as the files were large to be used by other programs. Installed the packages Tidyverse , readr ,dplyy,ggplot2, hydroTSM ,hms,data.table,lubridate and scales. rbind was used to combine the 12 files (january,february, march, april , may , jun, jul,aug,sep,oct,nov,dec) 2022 to one file year.
-1.uploaded the 12 files (jan,feb.....etc) using read.csv 
-2.rbind all the files to data frame year 
-3.Created a new data frame to keep the a copy of my previous data year_2 
-4.Added columns start and end (for date_time information) , as Started_at and ended_at were considered as char. 
-5.Added columns:
-- ride_length by subtracting end with start, to check the duration of the ride. 
-- day_of_week to check the day of the week
-- month 
-- hour 
-- day 
-- season (spring,summer..etc) 
-- time_of_day (morning,night..etc) 
+So R was used as the files were large to be used by other programs. Installed the packages Tidyverse , readr ,dplyy,ggplot2, hydroTSM ,hms,data.table,lubridate and scales. rbind was used to combine the 12 files (january,february, march, april , may , jun, jul,aug,sep,oct,nov,dec) 2022 to one file year.<br>
+1.uploaded the 12 files (jan,feb.....etc) using read.csv <br>
+2.rbind all the files to data frame year <br>
+3.Created a new data frame to keep the a copy of my previous data year_2 <br>
+4.Added columns start and end (for date_time information) , as Started_at and ended_at were considered as char. <br>
+5.Added columns:<br>
+- ride_length by subtracting end with start, to check the duration of the ride. <br>
+- day_of_week to check the day of the week<br>
+- month <br>
+- hour <br>
+- day <br>
+- season (spring,summer..etc) <br>
+- time_of_day (morning,night..etc) <br>
 
 <h2>Prepare</h2>
 1.	Removed these columns (start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng)<br> 
@@ -68,7 +68,7 @@ So R was used as the files were large to be used by other programs. Installed th
 <h2>Visualizing by R </h2>
 •	Number of rides by ridertypes<br> ![2](https://user-images.githubusercontent.com/71370133/220773606-29e2027b-5aae-43ed-9302-a0a70789c9d2.png)
 
-
+<br>
 •	Average of rides by ridertype<br> ![3](https://user-images.githubusercontent.com/71370133/220773302-d0f77cb1-bacd-4c74-b986-e6796e427bb3.png)
 
 •	Number of rides by ridertypes per month <br>![4](https://user-images.githubusercontent.com/71370133/220773385-385a2708-db2c-4bd5-9473-c604b9e8a074.png)
