@@ -46,10 +46,10 @@ So R was used as the files were large to be used by other programs. Installed th
 - time_of_day (morning,night..etc) 
 
 <h2>Prepare</h2>
-1.	Removed these columns (start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng) 
-2.	Removed bad data where ride_length<=0 
-3.	Removed Remove NA with R 
-4.	Removed duplicates using distinct
+1.	Removed these columns (start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng)<br> 
+2.	Removed bad data where ride_length<=0 <br>
+3.	Removed Remove NA with R <br>
+4.	Removed duplicates using distinct<br>
 
 
 <h2>Analysis </h2>
