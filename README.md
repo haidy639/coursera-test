@@ -121,7 +121,7 @@ Members drive more from 6 am to 8 am for work and casual people tend to drive mo
 Casual people drive longer than members
 <h3>Month</h3>
 <br>
-![per_month](photos/per_month.png)
+<img src="https://github.com/haidy639/coursera-test/blob/master/photos/per_month.png">
 <br>
 Casual people drive longer from March to October, while members drive longer from November to February. 
 </p>
