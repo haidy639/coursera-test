@@ -78,13 +78,13 @@ Visualizing by R
 <h2>Visulaizing by Tableau</h2>
 </br>
 <h3>Members vs Casual</h3>
-![membervscasual.png](https://github.com/haidy639/coursera-test/blob/3766c804d10e23fce47c7b0c41d5c501146bfe39/membervscasual.png)
+![membervscasual](https://github.com/haidy639/coursera-test/blob/3766c804d10e23fce47c7b0c41d5c501146bfe39/membervscasual.png)
 
 Casual people tend to drive about 61% more than members.
 </br>
 <h3>Rideable types</h3>
 </br>
-![rideable_type.png](https://github.com/haidy639/coursera-test/blob/3766c804d10e23fce47c7b0c41d5c501146bfe39/rideable_type.png)
+![rideable_type](https://github.com/haidy639/coursera-test/blob/3766c804d10e23fce47c7b0c41d5c501146bfe39/rideable_type.png)
 </br>
 ![rideable2](https://user-images.githubusercontent.com/71370133/220762972-e910e810-beaa-43eb-b38a-768d6887eab6.png)
 </br>
