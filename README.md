@@ -29,7 +29,7 @@ The data has been made available by Motivate International Inc. under this licen
 
 <h3>Process</h3>
 First,I tried to use all the tools that i learned during the course and my study.So, i Created a folder for the year, unzipped all the 12 files(january,february, march, april , may , jun, jul,aug,sep,oct,nov,dec) 2022.Excel was used for all the 12 files , ride_length was measured by subtracting ended_at with started_at using the right format as HH:MM:SS . Checked the day_of_week using Weekday function. I figured out it was not the right decision to use it on large data and that costs alot time and excel wasnot able to read the started_at column and ended_at column as date_time.I tried different functions to change them but it was not that effecient.
-
+</br>
 
 So R was used as the files were large to be used by other programs. Installed the packages Tidyverse , readr ,dplyy,ggplot2, hydroTSM ,hms,data.table,lubridate and scales. rbind was used to combine the 12 files (january,february, march, april , may , jun, jul,aug,sep,oct,nov,dec) 2022 to one file year.
 1.uploaded the 12 files (jan,feb.....etc) using read.csv 
@@ -76,47 +76,47 @@ So R was used as the files were large to be used by other programs. Installed th
 •	Average of rides by ridertypes per season
 <br>
 <h2>Visulaizing by Tableau</h2>
-</br>
+<br>
 <h3>Members vs Casual</h3>
 ![membervscasual](https://github.com/haidy639/coursera-test/blob/3766c804d10e23fce47c7b0c41d5c501146bfe39/membervscasual.png)
 
 Casual people tend to drive about 61% more than members.
-</br>
+<br>
 <h3>Rideable types</h3>
-</br>
+<br>
 ![rideable_type](https://github.com/haidy639/coursera-test/blob/3766c804d10e23fce47c7b0c41d5c501146bfe39/rideable_type.png)
-</br>
+<br>
 ![rideable2](https://user-images.githubusercontent.com/71370133/220762972-e910e810-beaa-43eb-b38a-768d6887eab6.png)
-</br>
+<br>
 people drive longer using classic bikes ; about 43% of rideable bike types.
 <br>
 <h3>Season</h3>
-</br>
+<br>
 ![season](https://user-images.githubusercontent.com/71370133/220763228-60a201a1-4621-4fa6-9169-af7864ffe27d.png)
-</br>
+<br>
 Members and casuals drive more during the summer time . Especially casual people tend to drive a lot during the summer season.
-</br>
+<br>
 <h3>Day of the weeek</h3>
 ![per_day_of_week](https://user-images.githubusercontent.com/71370133/220763554-15b3f443-8ee1-409b-a872-732e4995eae6.png)<right>
 Ride length is higher during the weekends especially on Saturday during the summer season . Followed by Sunday during the summer season that has also a higher ride length result as well
-</br>
+<br>
 ![per_day_of_week2](https://user-images.githubusercontent.com/71370133/220763714-5db518a7-750e-43fc-b4aa-c31ee1a1cb22.png)
 Casual people drive more in weekends than members
 <h3>Hour</h3>
-</br>
+<br>
 ![per_hour](https://user-images.githubusercontent.com/71370133/220768977-06a5eb43-76f1-4624-aa58-6abe48ec510b.png)
-</br>
+<br>
 Members drive more from 6 am to 8 am for work and casual people tend to drive more from 10 am till the night than members.
-</br>
+<br>
 <h3>Day</h3>
-</br>
+<br>
 ![per_day](https://user-images.githubusercontent.com/71370133/220764271-c0b1c2d8-38ab-4a47-b1ba-7696dac2c2a3.png)
-</br>
+<br>
 Casual people drive longer than members
 <h3>Month</h3>
-</br>
+<br>
 ![per_month](https://user-images.githubusercontent.com/71370133/220764407-3855b081-80d4-4abf-886b-6b583e474e82.png)
-</br>
+<br>
 Casual people drive longer from March to October, while members drive longer from November to February. 
 
 
