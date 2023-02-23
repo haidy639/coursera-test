@@ -1,0 +1,169 @@
+#----------------Capstone--------
+#----------------install the libraries--------
+
+install.packages("tidyverse")
+install.packages("dplyr")
+install.packages("ggplot2") #visualizing
+install.packages("hydroTSM") #to check the season
+install.packages("readr") #to read the files .csv
+install.packages("hms")#hours:minutes:seconds
+install.packages("data.table")# to export the data frame
+install.packages("lubridate") #for dates and time
+install.packages("scales")# for the graph x axis values
+
+#----------------load the libraries--------
+
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(hydroTSM)
+library(readr)
+library(hms)
+library(data.table)
+library(lubridate)
+library(scales)
+
+#----------------Uploading csv files--------
+
+jan <- read.csv("jan_trip.csv")
+feb <- read.csv("feb_trip.csv")
+mar <- read.csv("mar_trip.csv")
+apr <- read.csv("apr_trip.csv")
+may <- read.csv("may_trip.csv")
+jun <- read.csv("jun_trip.csv")
+jul <- read.csv("jul_trip.csv")
+aug <- read.csv("aug_trip.csv")
+sep <- read.csv("sep_trip.csv")
+oct <- read.csv("oct_trip.csv")
+nov <- read.csv("nov_trip.csv")
+dec <- read.csv("dec_trip.csv")
+year<-rbind(jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec) #combing all the 12 data frames to one data frame year
+
+#---------Added columns-----------------
+year_2<-year #created a new data frame to keep the a copy of my previous data
+year_2$start<-as_datetime(year_2$started_at) #created column for start ,as started_at wasn't
+year_2$ride_length <- difftime(year_2$end,year_2$start) # ride_length to check the duration of the ride
+year_2$ride_length <- as.numeric(as.character(year_2$ride_length)) # changed to numeric to run the calculations easily
+year_2$month <- format(as.Date(year_2$start), "%m") # added column for month
+year_2$day <- format(as.Date(year_2$start), "%d") #added column for day
+year_2$day_of_week <- format(as.Date(year_2$start), "%A") #checking the day of the week
+year_2$hour <- hour(year_2$start) #added column for the hour
+time_of_day <- list() #a data frame for time_of_day
+time_of_day[year_2$hour >= 6 & year_2$hour < 12]<- "Morning" #checking the time for the right result 
+time_of_day[year_2$hour >= 12 & year_2$hour < 18]<- "Afternoon"
+time_of_day[year_2$hour >= 18 & year_2$hour < 24]<- "Evening"
+time_of_day[year_2$hour >= 0 & year_2$hour < 6]<- "night"
+year_2 <- mutate(year_2, time_of_day) #adding the column to year_2 data frame
+rm(time_of_day) #removing data frame time_of_day to free up space
+
+#---------cleaning up the data-------
+
+year_2 <- year_2[ -c(6,8,9,10,11,12) ] #To start analyzing, these columns were deleted in R(start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng)
+year_2<-na.omit(year_2) #Remove NA with R 
+year_2 <- distinct(year_2) #removing duplicates
+year_2<-subset(year_2, ride_length>0) #removing the bad values (negatives)
+
+#------------------analysis----------
+mean(year_2$ride_length) # Average ride_length
+median(year_2$ride_length) 
+max(year_2$ride_length)
+min(year_2$ride_length)
+aggregate(year_2$ride_length ~ year_2$member_casual, FUN = mean) # comparing members vs casual (average,max,min,median)
+aggregate(year_2$ride_length ~ year_2$member_casual, FUN = median)
+aggregate(year_2$ride_length ~ year_2$member_casual, FUN = max)
+aggregate(year_2$ride_length ~ year_2$member_casual, FUN = min)
+#comparing ride_length of (members vs casual according to day of week)
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$day_of_week, FUN = mean)
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$day_of_week, FUN = max) #Members tend to drive longer than casuals in weekends
+#comparing ride_length of (members vs casual according to season)
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$season, FUN = mean)
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$season, FUN = max) #Members tend to drive longer only during spring
+#comparing ride_length of (members vs casual according to Month)
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$month, FUN = mean) # Average rides are higher in April for Members
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$month, FUN = max)
+#comparing ride_length of (members vs casual according to hour)
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$hour, FUN = mean)
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$hour, FUN = max) # Members tend to drive longer at 6 am ,20 and 23 pm
+#comparing ride_length of (members vs casual according to day)
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$day, FUN = mean)
+aggregate(year_2$ride_length ~ year_2$member_casual + year_2$day, FUN = max)# according to the days , members tend to drive longer on 2nd,4th and 19th day
+# checking rideable types for members vs casuals
+year_2 %>% # docked bikes are used more by casual people than members
+group_by(member_casual, rideable_type) %>% #casual people tend to use electric bikes and docked bikes than the classic ones
+count(rideable_type) #Members tends to use classic bikes and electric bikes than casual people 
+#count total rides with different rideable bikes 
+year_2 %>%
+group_by(rideable_type) %>% # Electric bikes are used the most, classic bikes is used more than docked bikes
+count(rideable_type)         
+#---------Visulaizing----------------
+ggplot(data=year_2,aes(x=member_casual,fill=rideable_type))+
+geom_bar(stat="count",position=position_dodge())+
+facet_grid(day_of_week ~ .)+
+ggtitle("Different bikes used by membervscasual according to day of week")
+# number of rides by ridertype
+---#weekday----
+year_2 %>% 
+mutate(weekday = wday(started_at, label = TRUE)) %>% 
+group_by(member_casual, weekday) %>% 
+summarise(number_of_rides = n()
+,average_duration = mean(ride_length)) %>% 
+arrange(member_casual, weekday)  %>% 
+ggplot(aes(x = weekday, y = number_of_rides, fill = member_casual)) +
+geom_col(position = "dodge")+
+scale_y_continuous(labels = comma_format(big.mark = ".",decimal.mark = ","))+ #scales on y-axis were 0e+0, changed the format of the number
+ggtitle("Number of rides by ridertype")
+# average rides by ridertype
+year_2 %>% 
+mutate(weekday = wday(started_at, label = TRUE)) %>% 
+group_by(member_casual, weekday) %>% 
+summarise(number_of_rides = n(),average_duration = mean(ride_length)) %>% 
+arrange(member_casual, weekday)  %>% 
+ggplot(aes(x = weekday, y = average_duration, fill = member_casual)) +
+geom_col(position = "dodge")+
+scale_y_continuous(labels = comma_format(big.mark = ".",decimal.mark = ","))+ggtitle("Average duration by ridertype")
+----#month--------
+# number of rides by ridertype
+year_2 %>% 
+  group_by(member_casual, month) %>% 
+  summarise(number_of_rides = n()
+            ,average_duration = mean(ride_length)) %>% 
+  arrange(member_casual, month)  %>% 
+  ggplot(aes(x = month, y = number_of_rides, fill = member_casual)) +
+  geom_col(position = "dodge")+
+  scale_y_continuous(labels = comma_format(big.mark = ".",decimal.mark = ","))+ #scales on y-axis were 0e+0, changed the format of the number
+  ggtitle("Number of rides by ridertype")
+#average duration by ridertype per month
+year_2 %>% 
+  group_by(member_casual, month) %>% 
+  summarise(number_of_rides = n()
+            ,average_duration = mean(ride_length)) %>% 
+  arrange(member_casual, month)  %>% 
+  ggplot(aes(x = month, y = average_duration, fill = member_casual)) +
+  geom_col(position = "dodge")+
+  scale_y_continuous(labels = comma_format(big.mark = ".",decimal.mark = ","))+ #scales on y-axis were 0e+0, changed the format of the number
+  ggtitle("Number of rides by ridertype")
+----#season--------
+# number of rides by ridertype
+year_2 %>% 
+  group_by(member_casual, season) %>% 
+  summarise(number_of_rides = n()
+            ,average_duration = mean(ride_length)) %>% 
+  arrange(member_casual, season)  %>% 
+  ggplot(aes(x = season, y = number_of_rides, fill = member_casual)) +
+  geom_col(position = "dodge")+
+  scale_y_continuous(labels = comma_format(big.mark = ".",decimal.mark = ","))+ #scales on y-axis were 0e+0, changed the format of the number
+  ggtitle("Number of rides by ridertype")
+#average duration by ridertype per season
+year_2 %>% 
+  group_by(member_casual, season) %>% 
+  summarise(number_of_rides = n()
+            ,average_duration = mean(ride_length)) %>% 
+  arrange(member_casual, season)  %>% 
+  ggplot(aes(x = season, y = average_duration, fill = member_casual)) +
+  geom_col(position = "dodge")+
+  scale_y_continuous(labels = comma_format(big.mark = ".",decimal.mark = ","))+ #scales on y-axis were 0e+0, changed the format of the number
+  ggtitle("Number of rides by ridertype")
+
+----#exporting.csv----------
+year_2<-unnest(year_2, time_of_day)# to solve the error of exporting , time_of_day has to be treated as not list
+write.csv(year_2, file="final_capstone.csv", row.names=FALSE)
