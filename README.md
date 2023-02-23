@@ -127,6 +127,20 @@ Casual people drive longer than members
 Casual people drive longer from March to October, while members drive longer from November to February. 
 </p>
 
+<h2>Summarizing the results</h2>
+1.The ride length of casual people are more than members.
+2.Members and casuals drive more during the summer time.
+3.classic bikes are used the most by members and casual people.
+4.Members drive more during the morning time at rush hours of 6 to 8 am while casual people drive from 10 am till night.
+5.Saturday is the busiest day especially during summer.
+
+<h2>Business plan</h2>
+1.Offering more classic bikes as it is used more by both users.
+2.Advertise more for the three bike types. 
+3.Special discounts that serves the casual people during the summer and during the other seasons from 10 am till night if they subscribe for membership.
+4.Discounts on weekends for members .
+
+
 
 
 
